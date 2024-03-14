@@ -1,69 +1,42 @@
 # Almost Always Vector?
 - Alternative titles
-    - Intuition from your compiler and tools.
-    - Your tools provide intuition!
-    - Tooling intuition to be a better developer
+    - Vector Velcro, Why Vector Sticks Around
+    - Vector Virtuoso: The Ins and Outs of std::vector
 
 ## Submission Details
-**Tags**: standard library, vector, cpp17, cpp20, cpp23 <br />
+**Tags**: standard library, vector, containers, data structures, cpp17, cpp20, cpp23 <br />
 **Session Type**: Back to Basic<br />
 **Level**: Beginner<br />
 **Audience**: application developers, students<br />
 **Session Material**: slides, example code  <br />
 
 ## Abstract
-Over the years the tools we use to develop have improved significantly. It used to be the compiler that could barely tell us we were missing a semicolon, now it will tell us the exact location.  The results from compilers have improved but are we doing all we can with them?  Do you always understand what they are saying?  
+Are you a fresh face in the world of C++ development, or perhaps you've got a bit of experience under your belt? Have you ever stopped to marvel at just how often std::vector pops up? It's a thing of beauty, a structure you can just keep piling data into, effortlessly sort, search, insert, and delete from. But do you know the price you pay for all this convenience? What about when you need to expand the structure? Or when you're on the hunt for something specific? Ever dabbled with custom predicates to dynamically tweak your data? With a plethora of data structures at our disposal in the standard library, it's a head-scratcher why std::vector seems to steal the show. 
 
-In this talk we will review the improvements by reading their output.  We will look at the common tools we use every day in our compilers and static analysis and work through some of the common and edge case errors.  We will pull apart items that are either code specific or linker specific and how to tell the difference.  Then we will look at static analysis and learn how we can use these tools to improve our development process.  
-
-We will use a cross platform (Windows, Mac, Linux) project to explore best practices for settings regarding warnings, errors, static analysis and how to make the best use of them.  Understand some of the trickier items and how to improve our use overall.
-
-Join us in this talk where we will learn to make better use of the tools, by building our intuiton.
+Join this talk to unravel the mystery behind why we almost always opt for std::vector, and learn how to wield it with maximum efficiency.
 
 ## Outline
-- The Basics
-    - Where did Vector come from?
-        - Arrays
-        - Cost of fixed length arrays
-            - Resizing
-            - Memory reallocation
-- basics
-    - initializing
-    - accessing elements
-    - adding and removing elements.
-- memory & allocators
-    - capacity vs size
-    - when reallocation happens and the cost
-    - custom allocators
-    - performance examples
-- iterators
-    - the beginning and ending
-    - types of iterators
-    - understanding iterators
-    - how it works with ranged for loops
-    - custom iterators
-- algorithms
-    - sorting and searching
-        - why it matters
-    - comparators and predicates
-    - manipulating and changing the vector
-    - invariants and invalidated
-        - multithreading madness
-- why almost always vector
-    - practical
-    - performance
-    - versatility
-    - efficiency
-
-
-
-
-Choosing std::vector over other containers in the C++ standard library often makes sense due to its versatility and performance characteristics. Here are some key reasons why std::vector is a popular choice:
-
-Dynamic Size: Unlike arrays, std::vector can resize itself dynamically, allowing you to add or remove elements efficiently. This flexibility is essential in many scenarios where the size of the data is not known in advance.
-Contiguous Memory: std::vector stores its elements in contiguous memory, making it efficient for iterating over elements and often providing better cache locality compared to other containers like std::list.
-Random Access: std::vector provides fast random access to its elements using indices, similar to arrays. This makes it suitable for scenarios where direct access to elements is required.
-Efficient Element Access: Accessing elements in a std::vector is typically faster than accessing elements in containers like std::list, which have more complex internal structures.
-Wide Support and Familiarity: std::vector is a widely used and well-understood container, making it easier for other developers to understand and maintain your code.
-Compatible with Algorithms: std::vector works seamlessly with standard algorithms and other components of the standard library, allowing you to write expressive and efficient code.
-While std::vector is a versatile container, it may not always be the best choice depending on the specific requirements of your application. Other containers like std::list, std::deque, or std::array may be more suitable in certain scenarios.
+- Introduction (3 minutes)
+    - Brief overview of the talk's structure and goals.
+- The Basics (5 minutes)
+    - Discuss the origins of std::vector from arrays.
+    - Highlight the limitations of fixed-length arrays and the advantages of std::vector.
+    - Demonstrate basic operations like initialization, element access, and adding/removing elements.
+- Memory Management and Allocators (7 minutes)
+    -  Explain the concepts of capacity and size.
+    - Discuss how and when reallocation happens, comparing it to fixed-length arrays.
+    - Introduce custom allocators and their potential benefits.
+- Iterators (15 minutes)
+    - Explain the purpose and types of iterators.
+    - Demonstrate iterator usage for iterating over a vector.
+    - Discuss how iterators work with ranged for loops and introduce the concept of custom iterators.
+- Algorithms (15 minutes)
+    - Showcase common algorithms like sorting and searching and their importance.
+    - Explain how to use comparators and predicates with algorithms.
+    - Discuss how to manipulate and change the vector using algorithms.
+    - Mention the importance of invariants and how operations can invalidate iterators, especially in multithreaded environments.
+- Comparing with Other Containers (10 minutes)
+    - Contrast std::vector with other containers like std::queue, std::map, and std::list.
+    - Discuss the trade-offs between sequential and random access containers.
+- Why Almost Always Vector (3 minutes)
+    - Summarize the efficiency, practicality, versatility, and of using std::vector.
