@@ -20,23 +20,39 @@ Join this talk to unravel the mystery behind why we almost always opt for std::v
     - Brief overview of the talk's structure and goals.
 - The Basics (5 minutes)
     - Discuss the origins of std::vector from arrays.
+    - Demonstrate basic operations
+        - initialization
+        - adding elements.
+        - element access
     - Highlight the limitations of fixed-length arrays and the advantages of std::vector.
-    - Demonstrate basic operations like initialization, element access, and adding/removing elements.
 - Memory Management and Allocators (7 minutes)
-    -  Explain the concepts of capacity and size.
+    - Explain the concepts of capacity and size.
     - Discuss how and when reallocation happens, comparing it to fixed-length arrays.
     - Introduce custom allocators and their potential benefits.
 - Iterators (15 minutes)
     - Explain the purpose and types of iterators.
     - Demonstrate iterator usage for iterating over a vector.
+        - remove with iterator
     - Discuss how iterators work with ranged for loops and introduce the concept of custom iterators.
 - Algorithms (15 minutes)
     - Showcase common algorithms like sorting and searching and their importance.
     - Explain how to use comparators and predicates with algorithms.
     - Discuss how to manipulate and change the vector using algorithms.
     - Mention the importance of invariants and how operations can invalidate iterators, especially in multithreaded environments.
+        - https://www.modernescpp.com/index.php/constexpr-vector-and-string-in-c-20/
 - Comparing with Other Containers (10 minutes)
     - Contrast std::vector with other containers like std::queue, std::map, and std::list.
     - Discuss the trade-offs between sequential and random access containers.
+        - https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3372r0.html
 - Why Almost Always Vector (3 minutes)
     - Summarize the efficiency, practicality, versatility, and of using std::vector.
+
+
+### Source Files
+-
+
+### Notes
+https://revealjs.com
+
+First standard including vector
+https://www.open-std.org/JTC1/SC22/WG21/docs/wp/html/sep94/
