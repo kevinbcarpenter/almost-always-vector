@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "{AAA}"}' />
+		<title>{AAA}</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="af46cec2d8c7e76ee54e32f084806886">
+<div class="sl-block" data-block-type="image" data-name="image-3c570d" data-block-id="1b63dfa1228cacdc5383d79708f561c7" style="width: 1024px; height: 576px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="2400" data-natural-height="1350" data-lazy-loaded="" data-src="aaa/39d77940058b2e934110466765e35f49.png"></div></div></section><section data-id="76be4980132242244b1950e8debdfe11"><div class="sl-block" data-block-type="code" data-name="code-92cd3c" data-block-id="454c623ac49113444b461c5122757c26" style="width: 787px; height: 283px; left: 118px; top: 204.5px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;array&gt;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int a[] = {0, 1, 2, 3, 4};
+
+std::vector&lt;int&gt; c = {0, 1, 2, 3, 4};
+
+auto main() -&gt; int {
+  std::cout &lt;&lt; "C style array: " &lt;&lt; sizeof(a) / sizeof(a[0]) &lt;&lt; std::endl;
+  std::cout &lt;&lt; "Vector size: " &lt;&lt; c.size() &lt;&lt; std::endl;
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-d81a4c" data-block-id="f5cef3390b07cba8a0753d9bb7e95b1b" style="width: 814.364965px; height: 155.387187px; left: 104.817518px; top: 10.112813px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1436" data-natural-height="274" data-lazy-loaded="" data-src="aaa/ea39803d71c3ea89f71bc2974bdcfa74.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-51128a" data-block-id="f65a50b3a3048b60ef07e4ae5d33eec5" style="height: auto; width: 975px; left: 24px; top: 526.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><span style="font-size:0.5em"><a href="https://www.reddit.com/r/cpp/comments/qm6i25/my_professor_is_telling_us_to_never_use_vectors/" target="_blank">https://www.reddit.com/r/cpp/comments/qm6i25/my_professor_is_telling_us_to_never_use_vectors/</a></span></p></div></div></section><section data-id="50cd3caa8cd7d801fed4cfff6913911a">
+<div class="sl-block" data-block-type="text" style="width: 860px; left: 82px; top: 472px; height: auto;" data-block-id="7ad3254b0290232c01f93ce13bf69ca0"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><h2>more std::vector?</h2></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-a9472f" data-block-id="9adb816bbc26d48f0057bacaa6c3df9e" style="min-width: 30px; min-height: 30px; width: 649.5px; height: 433px; left: 187.25px; top: 39px;"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 11;" data-media-id="11591139" data-video-thumb="aaa/75de1e7eb7d16d3f936a488dc6162d79.jpg"><video playsinline="" poster="aaa/75de1e7eb7d16d3f936a488dc6162d79.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-autoplay="" data-src="aaa/db2d787779d2da3b4d62be7f527d7018.mp4"></video></div></div></div></section><section data-id="9b9e5ed308b7f9c61863b8e9d923a64a"><div class="sl-block" data-block-type="text" style="width: 440px; left: 31px; top: 187px; height: auto;" data-block-id="c16641a384f954127ba0a4e8ffabae56"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;"><p>How do you read a technical book front to back?</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 440px; left: 31px; top: 437px; height: auto;" data-block-id="13a27dddeb41e62c25c16e7abf7eb698" data-name="text-75eee2"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left;" data-fragment-index="0"><p>As a technical editor...</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-352447" data-block-id="7094841c55d6b6099b129a241a95713c" style="width: 443.677778px; height: 547px; left: 567.8px; top: 14.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="657" data-natural-height="810" data-lazy-loaded="" data-src="aaa/60680cf95c5dcf782016bd713bb4c03e.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-cda205" data-block-id="35011ad0639754ffb01eb37d339bdac0" style="width: 323.165257px; height: 161.079256px; left: 31px; top: 14.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 14; transform: rotate(0deg);"><div class="sl-block-content" data-inline-svg="false" style="z-index: 14;"><img class="" data-natural-width="323" data-natural-height="161" data-lazy-loaded="" data-src="aaa/acf0b23444d3dfeec413bae8b3793424.svg"></div></div></div></section><section data-id="23674926ae9842660231272bde7dd0ca"><div class="sl-block" data-block-type="code" data-name="code-5df476" data-block-id="32d94cdd3eb30a6181dc45fb37c71c33" style="width: 925px; height: 224px; left: 49.5px; top: 64px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;stdio.h&gt;
+
+int main() {
+  int cppconEarlyYears[6] = {2014, 2015, 2016, 2017, 2018, 2019};
+
+  for (int i = 0; i &lt; 6; i++) {
+    printf("%d ", cppconEarlyYears[i]);
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-e17471" data-block-id="a6a4ae7532cf5d03084ba91780aebb4c" style="width: 925px; height: 78px; left: 49.5px; top: 320px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code>[Running]  gcc 1_the_old_way.c -o 1_the_old_way
+2014 2015 2016 2017 2018 2019
+[Done] exited with code=0 in 0.926 seconds</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-058e70" data-block-id="4ba5740ffd1e549a9b9457ea603caf92" style="height: auto; width: 600px; left: 186.5px; top: 14px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>The Old Way...</p></div></div></section><section data-id="2bbb6935bffb690be47a9e3d4f6b2b25"><div class="sl-block" data-block-type="code" data-name="code-5df476" style="width: 925px; height: 267px; left: 49.5px; top: 64px;" data-block-id="f66837375b6aae533a4e5d47c850d02c"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;stdio.h&gt;
+
+int main() {
+  int cppconEarlyYears[6] = {2014, 2015, 2016, 2017, 2018, 2019};
+
+  cppconEarlyYears[5] = 0;  // can't delete - fixed length
+
+  for (int i = 0; i &lt; 6; i++) {
+    printf("%d ", cppconEarlyYears[i]);
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-e17471" style="width: 925px; height: 109px; left: 49.5px; top: 362px;" data-block-id="8897623c99fe51490559c34e87ff0913"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code>[Running] gcc 2_swapping_values.c -o 2_swapping_values
+2014 2015 2016 2017 2018 0 
+[Done] exited with code=0 in 0.234 seconds</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-058e70" style="height: auto; width: 600px; left: 186.5px; top: 14px;" data-block-id="18b5210340a7fff1ad19511750f2a058"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>Deleting value's</p></div></div></section><section data-id="dfe8f98ea0f7779ead19173b9d417fe4"><div class="sl-block" data-block-type="code" data-name="code-5df476" style="width: 925px; height: 394px; left: 49.5px; top: 53px;" data-block-id="c8e09e18b6ae34c24ec353e82e53c355"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;stdio.h&gt;
+
+int main() {
+  int cppconEarlyYears[6] = {2014, 2015, 2016, 2017, 2018, 2019};
+  cppconEarlyYears[5] = 0; // &lt;- can't delete
+  // cppconEarlyYears[6] = 2020; // &lt;- can't add
+
+  int cppconEarlyRevised[6];
+  // cppconEarlyRevised = cppconEarlyYears; // &lt;- can't copy or assign
+
+  for (int i = 0; i &lt; 5; i++) { 
+    cppconEarlyRevised[i] = cppconEarlyYears[i];
+  }
+
+  for (int i = 0; i &lt; 7; i++) { // &lt;- yes - it prints
+    printf("%d ", cppconEarlyRevised[i]);
+  }
+
+  return 0;
+}</code></pre></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-058e70" style="height: auto; width: 600px; left: 186.5px; top: 14px;" data-block-id="6fc652ebbc0acabff1b064108b6bcc2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>The Limitations...</p></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 925px; height: 62px; left: 49.5px; top: 468px;" data-block-id="6b5e9441a78d0da2c2c115d053bf13a5" data-name="code-a1aab8"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 14;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code>[Running] gcc 3_the_limitations.c -o 3_the_limitations
+2014 2015 2016 2017 2018 1 2014 
+[Done] exited with code=0 in 0.227 seconds</code></pre></div></div></section><section data-id="2585b7f0738cb0fb29dab56b9cc2467c"><div class="sl-block" data-block-type="text" style="width: 860px; left: 82px; top: 523px; height: auto;" data-block-id="6fd868879b7bfcbd313aa73adb69cb06"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;"><pre style="text-align: center;">Thank you WG21/N0083</pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-f7fdec" data-block-id="7fb4d5350cf99169864ff1577da3a509" style="width: 751.148545px; height: 500px; left: 157.457886px; top: 11px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1962" data-natural-height="1306" data-lazy-loaded="" data-src="aaa/9b00459c80eaac275fc49cc563310e24.png"></div></div></section><section data-id="778aec2ac69781fd2f7df559a792eaf2"><div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 98px; height: auto;" data-block-id="97aaf9b2c94058d41923c183378ecee7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><h2>The Plan...</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 186px; height: auto;" data-block-id="20cc8271f209ff14b742fc67a8d62148"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><ul>
+	<li class="fragment" data-fragment-index="0">Basics</li>
+	<li class="fragment" data-fragment-index="1">Memory Management</li>
+	<li class="fragment" data-fragment-index="2">Iterators</li>
+	<li class="fragment" data-fragment-index="3">Algorithms</li>
+	<li class="fragment" data-fragment-index="4">Container Comparisons</li>
+	<li class="fragment" data-fragment-index="5">Why AAV</li>
+</ul></div></div></section><section data-id="082710053510d7e33697b761adfbbca6"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="791e066b52d8b4850ba957fd86a1bd21"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>The Basics</h1></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 286px; height: auto;" data-block-id="99407c50f0bd0a85899b6e7e303fdb19"><div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;" data-fragment-index="0"><h2>of DynArray</h2></div></div></section><section data-id="fa2105887687a234a945ff2d8eeafbb5"><div class="sl-block" data-block-type="code" data-name="code-5df476" style="width: 667px; height: 496px; left: 178.5px; top: 64px;" data-block-id="3da696ba565797c7d907bac4feb26c83"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 14px; line-height: 17px; tab-size: 4;"><code data-line-numbers="">template &lt;class T&gt; class DynArray {
+public:
+    // Constructors 
+    DynArray();                 // Array of size 0
+    DynArray (unsigned size);   // Array of given size
+    
+    // Destructor 
+    ~DynArray();    // destructs elements and frees dynamic store
+
+    // Copy and assign
+    DynArray(const DynArray&amp; source);
+    const DynArray&amp; operator=(const DynArray&amp; source);
+
+    // Element access
+    T&amp; operator[] (unsigned index);
+    const T&amp; operator[] (unsigned index) const;
+
+    // Low level aaccess to array elements
+    T* base() ;   // get address of first element
+    const T* base() const:
+
+    // Size
+    unsigned size() const;      // returns size of array
+    unsigned size(unsigned sz); // change size to sz
+
+    // Low level helper functions 
+    void swap (DynArray&amp; other); // swap contents 
+};</code></pre></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-058e70" style="height: auto; width: 600px; left: 212px; top: 13px;" data-block-id="0efcf3a71cf901a1b14026deb884b5d2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>Original Definition</p></div></div></section><section data-id="0334f00374d2c73d3a6ed256b5e9058f"><div class="sl-block" data-block-type="image" data-name="image-a3b94f" data-block-id="74f0e322fdbfa8b4911926a9ead4d01f" style="width: 706.514286px; height: 281px; left: 158.742857px; top: 147.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="440" data-natural-height="175" data-lazy-loaded="" data-src="aaa/0dc6dc8fe4b35ad5267c4fae9faa2232.png"></div></div></div></section><section data-id="b817a1a2fbcd9c791180a9366133e4fa"><div class="sl-block" data-block-type="text" data-name="text-cea5fd" data-block-id="21981c73715b291cb4f7b5a0c7296a54" style="height: auto; width: 600px; left: 212px; top: 17.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>From DynArray to vector?</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-543033" data-block-id="3aa4c644399f052b4b6aa8ed51c9abee" style="width: 976.749998px; height: 227.391534px; left: 23.625001px; top: 99.804233px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1890" data-natural-height="440" data-lazy-loaded="" data-src="aaa/3d15a3c9d2ccf36fc1b7b39a902641ed.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2d8566" data-block-id="301bcc44d86dc0d20e1576c847329104" style="height: auto; width: 600px; left: 212px; top: 342.5px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>and<br>
+ </p>
+
+<p><strong>std::vector</strong><br>
+ </p>
+
+<p>was born!</p>
+</div></div></section><section data-id="f0afecef9f9ce23bfc1f63f24999987d"><div class="sl-block" data-block-type="text" data-name="text-cea5fd" style="height: auto; width: 600px; left: 16px; top: 19.5px;" data-block-id="88bc5b33a7d343d5af7e1959a139376b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><h3>What happened in 32 years?</h3></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-87cf99" data-block-id="e348f3870a5231ae2daeb39c686953ff" style="width: 347.076923px; height: 576.326994px; left: 630.461539px; top: -0.326994px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="813" data-natural-height="1350" data-lazy-loaded="" data-src="aaa/e1e992192f48f8def43bd8070f542db1.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-7867a6" data-block-id="a214994ad2061e671fef864d69757073" style="height: auto; width: 600px; left: 16px; top: 109.5px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0"><p>32 member functions!</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-673535" data-block-id="095c37a0bc8a71d92bb554032eb20759" style="height: auto; width: 600px; left: 16px; top: 171.5px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="1"><p>More ways to access elements.</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 16px; top: 241.5px;" data-block-id="4224a7f47ab66634fbf4c7fb0dc4af74" data-name="text-f3bc8e"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="2"><p>Iterators</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8d0407" data-block-id="e1f3fd193932e0cd106acf1605c58497" style="height: auto; width: 600px; left: 16px; top: 303.5px;"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="3"><p>Allocators</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-39e0e1" data-block-id="e39598ac826500e79d87ba331b5f1787" style="height: auto; width: 600px; left: 16px; top: 365.5px;"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="4"><p>Modifiers</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb3857" data-block-id="a2bb0efbcd05d6bce724f92bb354b650" style="height: auto; width: 600px; left: 16px; top: 448.5px;"><div class="sl-block-content fragment fade-up" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;" data-fragment-index="5"><h1>Oh My!</h1></div></div></section><section data-id="7b54768096faa484e1ee8d28bd22078e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 202.5px; height: auto;" data-block-id="0849530b276333d090d552f8639a815d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>The Basics</h1></div></div>
+</section><section data-id="5c762735e9883045d89423b889b84bb2"><div class="sl-block" data-block-type="text" data-name="text-558d3d" data-block-id="f0854b2246a016481f721a2f0e01349b" style="height: auto; width: 600px; left: 212px; top: 13.859481px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>Creating a std::vector</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-1a7444" data-block-id="e047a869172d25be4ad97217357ebed2" style="width: 857.499119px; height: 505.886427px; left: 83.250441px; top: 52.859481px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;u_short&gt; wa_years; // empty vector of years
+  
+  wa_years.push_back(2014);      // adding to the Washington years.
+  wa_years.push_back(2015);
+  wa_years.push_back(2016);
+  wa_years.push_back(2017);
+  wa_years.push_back(2018);
+
+  std::vector&lt;u_short&gt; co_years = {2019, 2020, 2021,
+                                   2022, 2023, 2024}; // initializer list
+
+  std::vector&lt;u_short&gt; cppcon_total_years(11);  // construct with a size
+
+  std::vector&lt;u_short&gt; cppcon_space_odessy(11, 2001);  // with size and a default
+
+  for (auto yr : cppcon_total_years) {
+    std::cout &lt;&lt; yr &lt;&lt; ' ';
+  }
+  std::cout &lt;&lt; std::endl;
+
+  return 0;
+}</code></pre></div></div></section><section data-id="69ebfab3520aba6bd616387d07de4f13"><div class="sl-block" data-block-type="code" data-name="code-36295b" data-block-id="2c89edab2116ff5bc929612a9fcc021d" style="width: 558px; height: 122px; left: 233px; top: 227px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] &amp;&amp; g++ -std=c++20 1_create.cpp -o 1_create 
+
+0 0 0 0 0 0 0 0 0 0 0 
+
+[Done] exited with code=0 in 0.883 seconds</code></pre></div></div></section><section data-id="84ba4b4fbf25d98bbe8a1967ab39c643"><div class="sl-block" data-block-type="text" data-name="text-17709a" data-block-id="e65e794fa3b122ebe43db8ee07f2649d" style="height: auto; width: 600px; left: 212px; top: 13.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>Access data in a vector</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" data-block-id="64a2449f87cb3180ccd052f91a779697" style="width: 952px; height: 461px; left: 36px; top: 60.5px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;u_short&gt; co_years = {2019, 2020, 2021,
+                                   2022, 2023, 2024}; // initializer list
+
+  std::cout &lt;&lt; "Accessing the first elements...\n";
+  std::cout &lt;&lt; co_years[0] &lt;&lt; std::endl;
+  std::cout &lt;&lt; co_years.front() &lt;&lt; std::endl;
+
+  std::cout &lt;&lt; "Accessing the last elements...\n";
+  std::cout &lt;&lt; co_years.back() &lt;&lt; std::endl;
+  std::cout &lt;&lt; co_years.at(5) &lt;&lt; std::endl;
+
+  std::cout &lt;&lt; "Showing them all...\n";
+  for (auto yr : co_years) {
+    std::cout &lt;&lt; yr &lt;&lt; ' ';
+  }
+  std::cout &lt;&lt; std::endl;
+
+  return 0;
+}</code></pre></div></div>
+</section><section data-id="62831656463869705c2de3a15f7aa004"><div class="sl-block" data-block-type="code" data-name="code-47f7a0" data-block-id="54d5886a59a7dbf87699a9a96ced72d3" style="width: 597px; height: 284px; left: 213.5px; top: 146px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 2_accessing.cpp -o 2_accessing
+Accessing the first elements...
+2019
+2019
+
+Accessing the last elements...
+2024
+2024
+
+Showing them all...
+2019 2020 2021 2022 2023 2024 
+
+[Done] exited with code=0 in 0.57 seconds
+</code></pre></div></div></section><section data-id="3d9d025fa1b89ae8d275e2dfb0afd5de"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="1fc9c7a7ba96c710b2a25c021d11863b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>If [0] then why at(0)</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 287px; left: 36px; top: 60.5px;" data-block-id="f3c81030c6394daf4834fdb291a26e78"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;u_short&gt; co_years = {2019, 2020, 2021,
+                                   2022, 2023, 2024}; // initializer list
+
+  std::cout &lt;&lt; "When it works...\n";
+  std::cout &lt;&lt; co_years[0] &lt;&lt; "\n";
+  std::cout &lt;&lt; co_years.at(5) &lt;&lt; "\n";
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-bdbe88" data-block-id="3b269b38bb9a7e61a2fdfb9a524ef28c" style="width: 952px; height: 157px; left: 36px; top: 364.5px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 3_why_at.cpp -o 3_why_at
+When it works...
+2019
+2024
+
+[Done] exited with code=0 in 0.589 seconds
+</code></pre></div></div></section><section data-id="771ef6e23f3492d54099a9cc60d33536"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="7728f6a41540ce3d93f237129197b61b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>then at() can catch</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 311px; left: 36px; top: 60.5px;" data-block-id="21c1dc2987732d1d64b40d78493e493a"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;u_short&gt; co_years = {2019, 2020, 2021,
+                                   2022, 2023, 2024}; // initializer list
+
+  std::cout &lt;&lt; "\nWhen it doesn't...\n";
+  std::cout &lt;&lt; co_years[7] &lt;&lt; "\n";
+
+  std::cout &lt;&lt; "at() can catch it...\n";
+  std::cout &lt;&lt; co_years.at(7) &lt;&lt; "\n";
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-80e09a" data-block-id="6f8560306f93e8a624f9ebed16b388f1" style="width: 952px; height: 190px; left: 36px; top: 371.5px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 4_at_can_catch.cpp -o 4_at_can_catch 
+When it doesn't...
+0
+at() can catch it...
+libc++abi: terminating due to uncaught exception of type std::out_of_range: vector
+/bin/sh: line 1: 25723 Abort trap: 6 
+
+[Done] exited with code=134 in 0.583 seconds</code></pre></div></div></section><section data-id="f7a28a58b7fe3297fbfdf0d4fd54db25"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="5ba9843273807ef28e7f0aedccdb994a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>.data() when you want to c</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 390px; left: 36px; top: 60.5px;" data-block-id="9e6f8e7c57a5a2e72699bd9128129359"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;u_short&gt; co_years = {2019, 2020, 2021, 2022, 2023, 2024};
+  u_short *yrPtr = co_years.data();
+
+  std::cout &lt;&lt; "Years using data() pointer: ";
+  for (size_t i = 0; i &lt; co_years.size(); ++i) {
+    std::cout &lt;&lt; *(yrPtr + i) &lt;&lt; " ";
+  }
+  yrPtr[1] = 9999;
+
+  std::cout &lt;&lt; "\nModified vector: ";
+  for (int num : co_years) {
+    std::cout &lt;&lt; num &lt;&lt; " ";
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-80e09a" style="width: 952px; height: 101px; left: 36px; top: 458.5px;" data-block-id="6dbf915f3c8929de4a5c6e038071f293"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 5_data_when_c.cpp -o 5_data_when_c
+Years using data() pointer:2019 2020 2021 2022 2023 2024 
+Modified vector: 2019 9999 2021 2022 2023 2024 
+[Done] exited with code=0 in 0.566 seconds</code></pre></div></div></section><section data-id="dae81cb56cd5639b1a9a522ac1a48060"><div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 154px; height: auto;" data-block-id="8960ae8131e5c838f66644925fafd112"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Memory Management</h1></div></div>
+</section><section data-id="488f77080094d1cc8fb65a3056a60e26"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="9a9d4c9cc2cbddec6a3b140afb89f5a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>stack vs heap</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 371px; left: 36px; top: 52.5px;" data-block-id="69e085cacaa48f5a959537caabe31607"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  using year = u_short;
+  year cppconEarlyYears[5] = {2014, 2015, 2016, 2017, 2018};
+  std::vector&lt;year&gt; cppconAuroraYears = {2019, 2021, 2022, 2023, 2024};
+
+  std::cout &lt;&lt; "Bellevue: ";
+  for (int i = 0; i &lt; 5; i++) {
+    std::cout &lt;&lt; cppconEarlyYears[i] &lt;&lt; " ";
+  }
+  std::cout &lt;&lt; "\nAurora: ";
+  for (auto dy : cppconAuroraYears) {
+    std::cout &lt;&lt; dy &lt;&lt; " ";
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-78a1d1" data-block-id="035aadd0fc35a6daf1c80515ac83abf3" style="width: 952px; height: 91px; left: 36px; top: 446px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 0_stack_vs_heap.cpp -o 0_stack_vs_heap
+Bellevue: 2014 2015 2016 2017 2018 
+Aurora: 2019 2021 2022 2023 2024 
+[Done] exited with code=0 in 0.576 seconds</code></pre></div></div></section><section data-id="0873c0732516398545c6b4962eaf421f"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="72bd1afe643217f1721f525b27be39dd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>what's the stack limit?</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 250px; left: 37px; top: 52.5px;" data-block-id="8af4a79f4623327209bba38361ea1bff"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+// ulimit -s on mac/linux works too!
+void useStack(int depth) {
+  char buffer[1024]; // Allocate 1 KB on the stack
+  std::cout &lt;&lt; "Depth: " &lt;&lt; depth &lt;&lt; " Address: " &lt;&lt; &amp;buffer &lt;&lt; std::endl;
+  useStack(depth + 1);
+}
+
+int main() {
+  useStack(1);
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-78a1d1" style="width: 952px; height: 226px; left: 36px; top: 312.5px;" data-block-id="1cde5e4cd27e068364161bcfcf7837d9"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 2_stack_limit.cpp -o 2_stack_limit
+Depth: 2 Address: 0x16f55e978
+Depth: 3 Address: 0x16f55e548
+...
+Depth: 7802 Address: 0x16ed652f8
+Depth: 7803 Address: 0x16ed64ec8
+Depth: 7804 Address: 0x16ed64a98
+/bin/sh: line 1: 52763 Segmentation fault: 11  ./almost-always-vector/src/3_memory/2_stack_limit
+
+[Done] exited with code=139 in 0.626 seconds</code></pre></div></div></section><section data-id="52d75817976fe8a9316d13ee128d7dbb"><div class="sl-block" data-block-type="text" data-name="text-496baa" data-block-id="cc9382ad10108e5c0f32f0b10522440a" style="height: auto; width: 600px; left: 212px; top: 13.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>the trade offs</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-be325e" data-block-id="120b3c5a49ee44b99dfdc791a1052026" style="height: auto; width: 442px; left: 46.5px; top: 75.5px;"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p><strong>Stack</strong></p></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 469px; left: 508.5px; top: 75.5px;" data-block-id="2c8357055896e632e32513575661ae5b" data-name="text-1c6c60"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><strong>Heap</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-734d75" data-block-id="2a1c14e5c12b1a413b0b71796045e147" style="height: auto; width: 430px; left: 46.5px; top: 126.5px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="0">
+<p style="text-align:left">Fast - pointer adjustment.</p>
+
+<p style="color:rgb(0, 0, 0); text-align:left">Automatic - easy clean up.</p>
+
+<p style="color:rgb(0, 0, 0); text-align:left">Predictable - easy to debug.</p>
+
+<p style="color:rgb(0, 0, 0); text-align:left">Locality - cache performance.</p>
+
+<p style="color:rgb(0, 0, 0); text-align:left">Safety - see automatic.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-e41e36" data-block-id="2701a0d2d77a5787aa46f742c45e0cfd" style="height: auto; width: 446px; left: 531.5px; top: 126.5px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="1">
+<p style="color:rgb(0, 0, 0); text-align:left">Flexible - dynamic at runtime.</p>
+
+<p style="color:rgb(0, 0, 0); text-align:left">Large - bigger is better right?</p>
+
+<p style="color:rgb(0, 0, 0); text-align:left">Lifetime - !f(x) dependent.</p>
+
+<p style="color:rgb(0, 0, 0); text-align:left">Sharing - between two threads.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-43946b" data-block-id="39eeb6ab08b1fd3673acd6a1fd222e17" style="height: auto; width: 430px; left: 46.5px; top: 391px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="2"><p style="text-align: left;">Use when data is small, doesn't need to persist beyond the function and you want speed.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-0eb34d" data-block-id="a41aea9b05e7aa82604b834ead52f62d" style="height: auto; width: 446px; left: 531.5px; top: 391px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="3"><p style="text-align:left">Use when data is large, needs to persist, be flexible.  </p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-73a8ef" data-block-id="ccc01c9e6e97fba231231f5b01226020" style="height: auto; width: 446px; left: 531.5px; top: 508px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;" data-fragment-index="4"><p><span style="color:rgb(0, 0, 0); text-align:left">Watch your toes.</span></p></div></div></section><section data-id="47989684a0969542d45ffc08b00ea5ad"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="a5ada70518c6a493c3501e3db8c4a464"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>size vs capacity</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 355px; left: 34px; top: 52.5px;" data-block-id="f4fe9de9f6a933f689e95a8f5a6599e8"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;int&gt; co = {2019, 2020, 2021, 2022, 2023, 2024};
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+
+  std::vector&lt;int&gt; wa;
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; wa.size() &lt;&lt; "/" &lt;&lt; wa.capacity() &lt;&lt; "\n";
+  wa.push_back(2014);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; wa.size() &lt;&lt; "/" &lt;&lt; wa.capacity() &lt;&lt; "\n";
+  wa.push_back(2015);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; wa.size() &lt;&lt; "/" &lt;&lt; wa.capacity() &lt;&lt; "\n";
+  wa.push_back(2016);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; wa.size() &lt;&lt; "/" &lt;&lt; wa.capacity() &lt;&lt; "\n";
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-394662" style="width: 952px; height: 151px; left: 36px; top: 407.5px;" data-block-id="0289e974fff8107834496593799f8149"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 2_size_vs_capacity.cpp -o 2_size_vs_capacity
+Size/Capacity: 6/6
+Size/Capacity: 0/0
+Size/Capacity: 1/1
+Size/Capacity: 2/2
+Size/Capacity: 3/4
+[Done] exited with code=0 in 0.669 seconds</code></pre></div></div></section><section data-id="018e0073ee298b2d57519b048fc7fb2b"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="d5b3646f2872c6bda76528f3cd694b5e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>old c style reallocation</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 431px; left: 36px; top: 52.5px;" data-block-id="e2f84348261ed74b9269a10f7a93c382"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+int main() {
+  int *cArray = new int[5];
+  for (int i = 0; i &lt; 5; ++i) {
+    cArray[i] = i + 1;
+  }
+  int *temp = new int[10];
+  for (int i = 0; i &lt; 5; ++i) {
+    temp[i] = cArray[i];
+  }
+  delete[] cArray; // Important: free the old memory
+  cArray = temp;
+  for (int i = 5; i &lt; 10; ++i) {
+    cArray[i] = i + 1;
+  }
+  for (int i = 0; i &lt; 10; ++i) {
+    std::cout &lt;&lt; cArray[i] &lt;&lt; " ";
+  }
+  std::cout &lt;&lt; "\n";
+  delete[] cArray;
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-d06511" data-block-id="95364939661d0c1e90ec3397547ee47c" style="width: 952px; height: 70px; left: 36px; top: 492px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 3_c_style_array.cpp -o 3_c_style_array
+1 2 3 4 5 6 7 8 9 10 
+[Done] exited with code=0 in 0.523 seconds</code></pre></div></div></section><section data-id="269d08ce891318db8e10520a8b96c0c8"><div class="sl-block" data-block-type="text" data-name="text-558d3d" style="height: auto; width: 600px; left: 212px; top: 13.859481px;" data-block-id="00a0eb4a0c1b172e6ac3de9e26b678a0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>Managing allocation</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-1a7444" style="width: 930.499119px; height: 373.886427px; left: 46.750441px; top: 52.859481px;" data-block-id="6105dfcd2a482bc78cb51032901bf9df"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+void addYears(std::vector&lt;int&gt; &amp;vec, int start, int years) {
+  for (auto i = start; i &lt; start + years; ++i) {
+    vec.push_back(i);
+  }
+}
+
+int main() {
+  std::vector&lt;int&gt; co;
+  addYears(co, 2019, 4);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+  addYears(co, co.back(), 6);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+  addYears(co, co.back(), 10);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-b8077b" data-block-id="7cb0246c49d5abbc84936fbf4a2cb10d" style="width: 930.499119px; height: 112px; left: 46.750441px; top: 437px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 4_managing_allocation.cpp -o 4_managing_allocation
+Size/Capacity: 4/4
+Size/Capacity: 10/16
+Size/Capacity: 20/32
+[Done] exited with code=0 in 0.587 seconds</code></pre></div></div></section><section data-id="fefd355f2d7dcb6d3a8c619646650ef7"><div class="sl-block" data-block-type="text" data-name="text-558d3d" style="height: auto; width: 600px; left: 212px; top: 13.859481px;" data-block-id="8908688b5e6cf8838ca283436d8fefe9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>reserve to prevent allocations</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-1a7444" style="width: 930.499119px; height: 396.140519px; left: 46.750441px; top: 52.859481px;" data-block-id="a503e256597f09c6c3baebfe75ca550d"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+void addYears(std::vector&lt;int&gt; &amp;vec, int start, int years) {
+  for (auto i = start; i &lt; start + years; ++i) {
+    vec.push_back(i);
+  }
+}
+
+int main() {
+  std::vector&lt;int&gt; co;
+  addYears(co, 2019, 4);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+  co.reserve(40);
+  addYears(co, co.back(), 6);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+  addYears(co, co.back(), 10);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-b8077b" style="width: 930.499119px; height: 113px; left: 46.750441px; top: 449px;" data-block-id="482ec756feb648ecd9c10be77e6e901b"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 5_reserve_allocations.cpp -o 5_reserve_allocations
+Size/Capacity: 4/4
+Size/Capacity: 10/40
+Size/Capacity: 20/40
+[Done] exited with code=0 in 0.642 seconds</code></pre></div></div></section><section data-id="f6ede95ea29296c594f281d3e3237bd2"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="3de0cb0fed5c0392c36f3131f634dbae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>shrink_to_fit</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 390px; left: 36px; top: 52.5px;" data-block-id="3ade348ca7f82689ad68d8f32bd3cfe3"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+void addYears(std::vector&lt;int&gt; &amp;vec, int start, int years) { // same implementation...}
+
+int main() {
+  std::vector&lt;int&gt; co;
+  addYears(co, 2019, 4);
+  addYears(co, co.back(), 6);
+  addYears(co, co.back(), 12);
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+  co.shrink_to_fit(); // non-binding
+  std::cout &lt;&lt; "Size/Capacity: " &lt;&lt; co.size() &lt;&lt; "/" &lt;&lt; co.capacity() &lt;&lt; "\n";
+
+  for (auto y : co) {
+    std::cout &lt;&lt; y &lt;&lt; " ";
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-394662" style="width: 952px; height: 121px; left: 36px; top: 442.5px;" data-block-id="fb44ae49c6762af1da0211b3c0a38dd4"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 6_shrink_to_fit.cpp -o 6_shrink_to_fit
+Size/Capacity: 22/32
+Size/Capacity: 22/22
+2019 2020 2021 2022 2022 2023 2024 2025 2026 2027 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 
+[Done] exited with code=0 in 0.562 seconds</code></pre></div></div></section><section data-id="ed87d3b525188ce2187547a2160efea2"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="9e382989a1194d70769c88b6f0ad2ab8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>std::vector on the stack?</p></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-2b8abb" data-block-id="dd2000afc5b45a8aec082bb6383890f1" style="width: 952.370689px; height: 465.353833px; left: 35.814656px; top: 55.323083px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="2374" data-natural-height="1160" data-lazy-loaded="" data-src="aaa/b8705a608aeab60963e7613781a136f8.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-96b733" data-block-id="6a8bad943e543719fb447096094c9f32" style="height: auto; width: 665px; left: 179.5px; top: 530px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><span style="font-size:0.7em">https://www.youtube.com/watch?v=RLezJuqNcEQ&amp;t=2676s</span></p></div></div></section><section data-id="a282398c6836fa46ff465ed45a3a6181"><div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 202.5px; height: auto;" data-block-id="f439c74e51b75717e4aab7e1eaf660d9"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Iterators</h1></div></div>
+</section><section data-id="4956466847c8ae8f9d125c894fce116d"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="e25ebf9818774ca6ae95fc0d377f63bc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>what is an iterator</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 339px; left: 36px; top: 52.5px;" data-block-id="8ecc6767ef536ceef53d4230b6f1c093"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;int&gt; co = {2019, 2020, 2021, 2022, 2023, 2024};
+
+  auto it = co.begin();
+  std::cout &lt;&lt; "Value pointed to by iterator: " &lt;&lt; *it &lt;&lt; "\n"; // Output: 10
+  std::cout &lt;&lt; "Address of element in vector: " &lt;&lt; &amp;(*it)
+            &lt;&lt; "\n"; // Address of 10 in the vector
+  std::cout &lt;&lt; "Address of the iterator itself: " &lt;&lt; &amp;it
+            &lt;&lt; "\n"; // Address of the iterator object
+
+  std::cout &lt;&lt; "Iterator value at 3: " &lt;&lt; *(it + 3) &lt;&lt; "\n";
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-394662" style="width: 952px; height: 145px; left: 36px; top: 404.5px;" data-block-id="b1dedeb0534c5bdf6812f39f73f7c766"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 0_hidden_iterator.cpp -o 0_hidden_iterator
+Value pointed to by iterator: 2019
+Address of element in vector: 0x139605f60
+Address of the iterator itself: 0x16d7fb168
+Iterator value at 3: 2022
+
+[Done] exited with code=0 in 0.569 seconds</code></pre></div></div></section><section data-id="25a655cc829664af9d083bfb35d5f994"><div class="sl-block" data-block-type="text" style="width: 860px; left: 82px; top: 14px; height: auto;" data-block-id="5801640b55a8e65d231976e7aa10687f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><p>pointers be like...</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b46d24" data-block-id="6ecc33aa84739504123d039d9fec1faa" style="width: 724.60396px; height: 476px; left: 149.69802px; top: 64px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="615" data-natural-height="404" data-lazy-loaded="" data-src="aaa/4ba0aff21b3b25b532302218b56c263d.png"></div></div></section><section data-id="6c7f1e2e0a94acf4aba933dc259ebf60"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="6037319249ad6b74dd01cc472c7cd39d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>what is an iterator</p></div></div>
+
+<div class="sl-block" data-block-type="text" data-name="text-08c0aa" data-block-id="2535a8e98bcd2d343cb11376db6dc06e" style="height: auto; width: 600px; left: 212px; top: 99.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="color:rgb(14, 14, 14); text-align:left">Though a pointer can be thought of as an iterator, as it allows us to iterate over elements in a block of memory.</p>
+
+<p style="color:rgb(14, 14, 14); text-align:left"> </p>
+
+<p style="color:rgb(14, 14, 14); text-align:left">Iterators in the stl abstract away and give guard rails to the pointer.  Allowing the benifits and helping minimize mistakes.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-622e14" data-block-id="56a740ca31650a93fcd802ab9ea105b5" style="height: auto; width: 600px; left: 212px; top: 482px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0"><p><span style="color:rgb(14, 14, 14); text-align:left">Its a pointer - in bubble wrap</span></p></div></div></section><section data-id="4ac1b517414c67cb64efb141968950ba"><div class="sl-block" data-block-type="text" data-name="text-9e092d" data-block-id="b6e445add9963302abb37fa093129e3c" style="height: auto; width: 600px; left: 212px; top: 14px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>different iterators</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-f9c626" data-block-id="dde61574296cb13e390faa9eb3b47b97" style="width: 835px; height: 387px; left: 94.5px; top: 53px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;int&gt; co = {2019, 2020, 2021, 2022, 2023, 2024};
+
+  std::cout &lt;&lt; "Forward iteration using begin() and end():"
+            &lt;&lt; "\n";
+  for (auto it = co.begin(); it != co.end(); ++it) {
+    std::cout &lt;&lt; *it &lt;&lt; " "; // Dereference the iterator to get the value
+  }
+
+  std::cout &lt;&lt; "\nReverse iteration using rbegin() and rend():"
+            &lt;&lt; "\n";
+  for (auto rit = co.rbegin(); rit != co.rend(); ++rit) {
+    std::cout &lt;&lt; *rit &lt;&lt; " "; // Dereference the reverse iterator
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-e9d05e" data-block-id="6aa513d2e41a34868ab7473753284c7d" style="width: 835px; height: 128px; left: 94.5px; top: 448px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 1_different_iterators.cpp -o 1_different_iterators
+Forward iteration using begin() and end():
+2019 2020 2021 2022 2023 2024 
+Reverse iteration using rbegin() and rend():
+2024 2023 2022 2021 2020 2019 
+[Done] exited with code=0 in 0.583 seconds</code></pre></div></div></section><section data-id="92be8d77ac5760844fb41832fdff59f2"><div class="sl-block" data-block-type="text" data-name="text-9e092d" style="height: auto; width: 600px; left: 212px; top: 14px;" data-block-id="0ac516a0d225364b66af4721f2352327"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>favorite not iterator</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-f9c626" style="width: 835px; height: 351px; left: 94.5px; top: 53px;" data-block-id="2d19232fab523639ec29ca3c9d333fd3"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;int&gt; co = {2019, 2020, 2021, 2022, 2023, 2024};
+
+  std::cout &lt;&lt; "Is range based for loop an iterator?s\n";
+  for (auto yr : co) {
+    std::cout &lt;&lt; yr &lt;&lt; " ";
+  }
+
+  std::cout &lt;&lt; "\nIterator works as a pointer and not a copy...\n";
+  for (auto it = co.begin(); it != co.end(); ++it) {
+    std::cout &lt;&lt; *it &lt;&lt; " "; // Dereference the iterator to get the value
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-e9d05e" style="width: 835px; height: 128px; left: 94.5px; top: 422px;" data-block-id="ea702fd1e46e8ecdff6b2beccf81b861"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 2_favorite_not_iterator.cpp -o 2_favorite_not_iterator
+Is range based for loop an iterator?
+2019 2020 2021 2022 2023 2024 
+Iterator works as a pointer and not a copy...
+2019 2020 2021 2022 2023 2024 
+[Done] exited with code=0 in 0.645 seconds</code></pre></div></div></section><section data-id="9bb4e0cc410e3575e9336f0e2c1eddcb"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="dd9b3089d234240f94354ab15aabedc4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>different types of iterators</p></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-577776" data-block-id="0fb4260cceccffc76221fb24e17d066a" style="width: 814.32362px; height: 343.427555px; left: 104.83819px; top: 106.286223px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1546" data-natural-height="652" data-lazy-loaded="" data-src="aaa/c247c2ed9d40100701c59b328fac7eb5.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-737861" data-block-id="902e5f234e7141c51d28b5f8f522a090" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 24.83819px; top: 389px;"><div class="sl-block-content fragment" data-line-x1="0" data-line-y1="0" data-line-x2="80.05214699999999" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 12;" data-line-width="4px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="80.05214699999999" height="1" viewbox="0 0 80.05214699999999 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="77.05214699999999" y2="0"></line><line class="line-element" stroke="#000000" stroke-width="4" x1="0" y1="0" x2="77.05214699999999" y2="0"></line><path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="4" transform="translate(77.05214699999999,0) rotate(90)" d="M 9 9 L 0 0 L -9 9"></path></svg></div></div></section><section data-id="747dcbfacefc081f34022745f7fb6e05"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="2814581662f2adebd37e0548053fc8ed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>invalidating iterators</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 337px; left: 36px; top: 52.5px;" data-block-id="e7b389f0cc4aa0dc91b26200b80a2926"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+  std::vector&lt;int&gt; cppconYears = {2019, 2020, 2021, 2022, 2023, 2024};
+  auto it = cppconYears.begin() + 1;
+
+  std::cout &lt;&lt; "Lost year: " &lt;&lt; *it &lt;&lt; std::endl;
+  cppconYears.push_back(2025);
+  std::cout &lt;&lt; "After push_back: " &lt;&lt; *it &lt;&lt; std::endl;
+
+  for (auto yr : cppconYears) {
+    std::cout &lt;&lt; yr &lt;&lt; ' ';
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-394662" style="width: 952px; height: 128px; left: 36px; top: 413.5px;" data-block-id="fe1786cfc98c452a84541d24d13506d9"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 3_invalidating.cpp -o 3_invalidating
+Lost year: 2020
+After push_back, iterator now points to: 0
+2019 2020 2021 2022 2023 2024 2025 
+[Done] exited with code=0 in 0.586 seconds</code></pre></div></div></section><section data-id="3dcb69fb4d099e27ac10768484597e8e"><div class="sl-block" data-block-type="image" data-name="image-2a95b8" data-block-id="38605ecb07dabc0772e546ee15e428c4" style="width: 921.777777px; height: 360.695652px; left: 51.111111px; top: 64.652174px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1564" data-natural-height="612" data-src="aaa/0ef22d897cc15e7187c6143b474b2a17.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-7951f2" data-block-id="57bf59938f05b635979143a861eeffe9" style="height: auto; width: 954px; left: 35px; top: 502.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p><a href="https://en.cppreference.com/w/cpp/container#Iterator_invalidation" target="_blank">https://en.cppreference.com/w/cpp/container#Iterator_invalidation</a></p></div></div></section><section data-id="30ab44b7e06bead200de1779fc91661d"><div class="sl-block" data-block-type="text" data-name="text-33fd70" data-block-id="e958f5ddc3f5f429fd2d73790f46bb31" style="height: auto; width: 600px; left: 212px; top: 14px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>excellent deep dive on iterators</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-bd11f1" data-block-id="4f6ac8c55dfd38760dade579821f98c6" style="width: 747.083636px; height: 421px; left: 138.458182px; top: 77.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="976" data-natural-height="550" data-lazy-loaded="" data-src="aaa/dfbbe5601c1deddc08def3c1fc3ef40f.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-3c240c" data-block-id="3a1afe9b26d79e459a4211d375a2cb24" style="height: auto; width: 600px; left: 212px; top: 516px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><span style="font-size:0.7em">https://youtu.be/Fv8oj8EdssY?si=AIfpp3gOqXNXQkfI</span></p></div></div></section><section data-id="aec8272a4ca317d8417a998a2f3c6695"><div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 202.5px; height: auto;" data-block-id="9e613a9a2c1ccd428ff5d8d851a620c8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Algorithms</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f4e6ad" data-block-id="8cd6ce5da2eadd801627afaed52ffbe1" style="height: auto; width: 600px; left: 212px; top: 309px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Unary Predicates + Iterators</p></div></div></section><section data-id="69ca1c09515d71ee52b8aa23823fcf78"><div class="sl-block" data-block-type="text" data-name="text-2edccd" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="786104065a3ef4cae689c9046b2a1653"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>predicate as a function</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-b20664" data-block-id="55e3fdab538d91f1169ae165725cd811" style="width: 937px; height: 410px; left: 43.5px; top: 52.5px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+// Unary predicate function that checks if a number is even
+bool isEven(int n) { return n % 2 == 0; }
+
+int main() {
+  std::vector&lt;int&gt; co = {2019, 2020, 2021, 2022, 2023, 2024};
+
+  // Using std::find_if with a unary predicate to find the first even number
+  auto it = std::find_if(co.begin(), co.end(), isEven);
+
+  if (it != co.end()) {
+    std::cout &lt;&lt; "First even number: " &lt;&lt; *it &lt;&lt; '\n';
+  } else {
+    std::cout &lt;&lt; "No even number found." &lt;&lt; '\n';
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-1ff5fc" data-block-id="2b467e543de1ab962c7cfb7e6c8494ec" style="width: 937px; height: 67px; left: 43.5px; top: 484px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 0_pred_as_function.cpp -o 0_pred_as_function
+First even number: 2020
+[Done] exited with code=0 in 0.565 seconds</code></pre></div></div></section><section data-id="9b4007fc0e71ba63ea858b9d3eede04d"><div class="sl-block" data-block-type="text" data-name="text-2edccd" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="5b4c8f012c5f33b836d83f44af0adbf2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>adjusting our iterator</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-b20664" style="width: 937px; height: 410px; left: 43.5px; top: 52.5px;" data-block-id="de627cb1050d356275ffe2da053377e4"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="12">#include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+// Unary predicate function that checks if a number is even
+bool isEven(int n) { return n % 2 == 0; }
+
+int main() {
+  std::vector&lt;int&gt; co = {2019, 2020, 2021, 2022, 2023, 2024};
+
+  // Using std::find_if with a unary predicate to find the first even number
+  auto it = std::find_if(co.begin() + 2, co.end(), isEven);
+
+  if (it != co.end()) {
+    std::cout &lt;&lt; "First even number: " &lt;&lt; *it &lt;&lt; '\n';
+  } else {
+    std::cout &lt;&lt; "No even number found." &lt;&lt; '\n';
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-1ff5fc" style="width: 937px; height: 67px; left: 43.5px; top: 484px;" data-block-id="cacfdae97094337b9bbd82e06b502188"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 0_pred_as_function.cpp -o 0_pred_as_function
+First even number: 2022
+[Done] exited with code=0 in 0.565 seconds</code></pre></div></div></section><section data-id="46a86760ba897898857e297aa820fd96"><div class="sl-block" data-block-type="text" data-name="text-2edccd" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="59e252c470d9ee9ac02f32964c31fcca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>as a lambda</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-b20664" style="width: 937px; height: 410px; left: 43.5px; top: 52.5px;" data-block-id="a2444228577dbf1340b58a35777fd4a1"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="12">#include &lt;algorithm&gt;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+// Unary predicate function that checks if a number is even
+bool isEven(int n) { return n % 2 == 0; }
+
+int main() {
+  std::vector&lt;int&gt; co = {2019, 2020, 2021, 2022, 2023, 2024};
+
+  // Using std::find_if with a unary predicate to find the first even number
+  auto it = std::find_if(co.begin(), co.end(), [](int n) { return n % 2 == 0; });
+
+  if (it != co.end()) {
+    std::cout &lt;&lt; "First even number: " &lt;&lt; *it &lt;&lt; '\n';
+  } else {
+    std::cout &lt;&lt; "No even number found." &lt;&lt; '\n';
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-1ff5fc" style="width: 937px; height: 67px; left: 43.5px; top: 484px;" data-block-id="0f2985a2d4e229c463b4a3aee02f1403"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 2_pred_as_lambda.cpp -o 2_pred_as_lambda
+First even number: 2020
+[Done] exited with code=0 in 0.566 seconds</code></pre></div></div></section><section data-id="5809aa03a8ccc4be5a534f36022d8c88"><div class="sl-block" data-block-type="image" data-name="image-2344c4" data-block-id="ab4141191494565825a39db8430e1ae2" style="width: 1024px; height: 477.512953px; left: 0px; top: 21.243524px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="2316" data-natural-height="1080" data-src="aaa/f001c642a874947fbfd668279bad9c97.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-e660dc" data-block-id="a7423f5d8d9baea2c600fd3c68e00a8a" style="height: auto; width: 600px; left: 212px; top: 524.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p><span class="headerText_f9f2ca"><span class="clickable_f9f2ca desaturateUserColors_c7819f username_f9f2ca" style="color:rgb(52, 152, 219); font-size:1rem"><span style="font-size:1.2em">Thank you Michael Maniscalco</span></span></span></p></div></div></section><section data-id="1aee9b93b7aceee1fe9448f6df44270b"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="20386bea583ed71cfde8fea6c99f819a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>fun with algorithms</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 952px; height: 451px; left: 36px; top: 68.5px;" data-block-id="1b218e90931c784491c3b99af6545d79"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include "nlohmann/json.hpp"
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using json = nlohmann::json;
+
+struct CreditCardInfo {
+  std::string type;
+  std::string name;
+  std::string number;
+  std::string cvv;
+  std::string expiry;
+  long amount;
+
+  void print() {
+    std::cout &lt;&lt; "Type: " &lt;&lt; type &lt;&lt; "\n";
+    std::cout &lt;&lt; "Name: " &lt;&lt; name &lt;&lt; "\n";
+    std::cout &lt;&lt; "Number: " &lt;&lt; number &lt;&lt; "\n";
+    std::cout &lt;&lt; "CVV: " &lt;&lt; cvv &lt;&lt; "\n";
+    std::cout &lt;&lt; "Expiry: " &lt;&lt; expiry &lt;&lt; "\n";
+    std::cout &lt;&lt; "Amount: " &lt;&lt; amount / 10 &lt;&lt; "\n\n";
+  }
+};</code></pre></div></div>
+</section><section data-id="09b338f7fd69132d748f5c2f2764f30e"><div class="sl-block" data-block-type="image" data-name="image-fdeb48" data-block-id="8e93c95edc554e23e57f07ec9910b23a" style="width: 841.386667px; height: 576px; left: 91.306667px; top: 0px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1972" data-natural-height="1350" data-src="aaa/6464834d98257815fab0ca95977ccb66.png"></div></div></section><section data-id="96b76f26ffbf540e03ee7e7941f72cab"><div class="sl-block" data-block-type="image" data-name="image-c9bab0" data-block-id="51a7fa564096d8f8c55ddf320220c17a" style="width: 1018.761566px; height: 576px; left: 2.619217px; top: 0px;"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="1988" data-natural-height="1124" data-src="aaa/85505c8f56e0d2371a8c077b714a3ab1.png"></div></div></section><section data-id="9243137920e9eee5acae77d8e0823238"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="6effebe42f480dc6fcea15330590f770"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>loading json card data</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 728px; height: 310px; left: 148px; top: 133px;" data-block-id="7881b6fdebae1dfa97e5556537916ff1"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">nlohmann::json load_card_data(std::string file_path) {
+  std::ifstream file(file_path);
+
+  if (!file.is_open()) {
+    std::cerr &lt;&lt; "Could not open the file!" &lt;&lt; std::endl;
+    return 1;
+  }
+
+  // Parse the file content as JSON
+  nlohmann::json json_data;
+  file &gt;&gt; json_data;
+
+  return json_data;
+}
+</code></pre></div></div>
+</section><section data-id="e3229d7cc7dec25a4b961e6fdd941cf8"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="922997687642b4d8941588572eb5e534"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>std::accumulate 10,000 items</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 872px; height: 356px; left: 76px; top: 61.5px;" data-block-id="60e35963bc9673024d8541f6ad65a7e0"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">int main() {
+  auto json_data = load_card_data("../large_card_data_10000.json");
+  std::vector&lt;CreditCardInfo&gt; cards = json_data.get&lt;std::vector&lt;CreditCardInfo&gt;&gt;();
+  std::vector&lt;std::string&gt; card_types = {"visa", "mc", "amex"};
+
+  std::cout &lt;&lt; "item count: " &lt;&lt; cards.size() &lt;&lt; "\n";
+  for (auto ct : card_types) {
+    // Use std::accumulate to sum amounts of the specific card type
+    long totalAmount = std::accumulate(cards.begin(), cards.end(), 0L,
+                      	[&amp;ct](long sum, const CreditCardInfo &amp;card) {
+                          return sum + (card.type == ct ? card.amount : 0);
+                        });
+
+    std::cout &lt;&lt; "Total amount for " &lt;&lt; ct &lt;&lt; ": " &lt;&lt; totalAmount / 10 &lt;&lt; "\n";
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-164a77" data-block-id="724d15569f400e5814ac1d0d70e30d14" style="width: 865px; height: 131.5px; left: 83px; top: 426.5px;"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 3_accumulate_cc.cpp -o 3_accumulate_cc
+item count: 10000
+Total amount for visa: 166488890
+Total amount for mc: 163266022
+Total amount for amex: 170784874
+[Done] exited with code=0 in 1.429 seconds</code></pre></div></div></section><section data-id="eccb5ab80f0ded29eb14070908b5bf3d"><div class="sl-block" data-block-type="text" data-name="text-17709a" style="height: auto; width: 600px; left: 212px; top: 13.5px;" data-block-id="5d7999d6fe03b42a786c026a079f516d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<p>std::accumulate 100,000</p>
+
+<p>items</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-4c0e23" style="width: 872px; height: 356px; left: 76px; top: 61.5px;" data-block-id="f13f32176523ab4a2be3ae285dd8be21"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">int main() {
+  auto json_data = load_card_data("../large_card_data_100000.json");
+  std::vector&lt;CreditCardInfo&gt; cards = json_data.get&lt;std::vector&lt;CreditCardInfo&gt;&gt;();
+  std::vector&lt;std::string&gt; card_types = {"visa", "mc", "amex"};
+
+  std::cout &lt;&lt; "item count: " &lt;&lt; cards.size() &lt;&lt; "\n";
+  for (auto ct : card_types) {
+    // Use std::accumulate to sum amounts of the specific card type
+    long totalAmount = std::accumulate(cards.begin(), cards.end(), 0L,
+                      	[&amp;ct](long sum, const CreditCardInfo &amp;card) {
+                          return sum + (card.type == ct ? card.amount : 0);
+                        });
+
+    std::cout &lt;&lt; "Total amount for " &lt;&lt; ct &lt;&lt; ": " &lt;&lt; totalAmount / 10 &lt;&lt; "\n";
+  }
+
+  return 0;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-164a77" style="width: 865px; height: 131.5px; left: 83px; top: 426.5px;" data-block-id="d27478bbcc255cf4afa945b7e0e999af"><div class="sl-block-content notranslate fragment" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 12;" data-fragment-index="0"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">[Running] g++ -std=c++20 3_accumulate_cc.cpp -o 3_accumulate_cc
+item count: 100000
+Total amount for visa: 1681038353
+Total amount for mc: 1660805502
+Total amount for amex: 1663977829
+[Done] exited with code=0 in 2.749 seconds</code></pre></div></div></section><section data-id="95c21459d3c0c497cb5c837ce36ae6f5"><div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 154px; height: auto;" data-block-id="cfc59f5c3319c622a16237b3f0f7d243"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>How does it compare?</h1></div></div>
+</section><section data-id="98f7ef527bfd0a6710df7cb4e2b3b736"><div class="sl-block" data-block-type="text" data-name="text-fb5e96" data-block-id="6ce50e8f29a3fdeb72bdb60fd92977bb" style="height: auto; width: 600px; left: 212px; top: 24px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>vs. std::list</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-545dbf" data-block-id="088f2b2e5e03fb6379fb45272564d2fa" style="height: auto; width: 950px; left: 37px; top: 113px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="color:rgb(14, 14, 14); text-align:left">A doubly linked list, no random access (<span>O(n)</span> to traverse).</li>
+	<li style="color:rgb(14, 14, 14); text-align:left">Efficient for insertions/deletions anywhere (<span>O(1)</span> with an iterator) but has higher memory overhead and slower iteration due to poor cache locality.</li>
+</ul>
+
+<p style="color:rgb(14, 14, 14); text-align:left"> </p>
+
+<p style="color:rgb(14, 14, 14); text-align:left">Choose <span>std::list</span> when you need frequent insertions/deletions at arbitrary positions.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-31c186" data-block-id="bd4dde076334b64c753e8567025c38eb" style="height: auto; width: 600px; left: 191.5px; top: 478px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>Otherwise... just start with std::vector</p></div></div></section><section data-id="42a61ba65d26d10b388a5ad2d1432098"><div class="sl-block" data-block-type="text" data-name="text-d19540" style="height: auto; width: 600px; left: 212px; top: 16px;" data-block-id="480b319393f2e43c00f3bf64b78300ba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>vs std::deque</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 938px; left: 43px; top: 110px;" data-name="text-2a790f" data-block-id="1ea005086fc9647ec43ceae8adacf154"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li style="color: rgb(14, 14, 14); text-align: left;">Non-contiguous memory, but still supports random access (slightly slower).</li>
+	<li style="color: rgb(14, 14, 14); text-align: left;">Fast insertions/removals at <strong>both ends</strong> (<span>O(1)</span>).</li>
+	<li style="color: rgb(14, 14, 14); text-align: left;">Less cache efficient.</li>
+	<li style="color: rgb(14, 14, 14); text-align: left;">No need for reallocation on resizing.</li>
+</ul>
+
+<p style="color: rgb(14, 14, 14); text-align: left;"> </p>
+
+<p style="color: rgb(14, 14, 14); text-align: left;">Choose std::deque when you need efficient insertions/removals at both the front and back.  </p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-84e38e" data-block-id="d53b9fc3e3fcc23af9900b4b441f0415" style="height: auto; width: 600px; left: 212px; top: 493.5px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0"><p><span style="color:rgb(0, 0, 0)">Otherwise... just start with std::vector</span></p></div></div></section><section data-id="d78afd84be95f86681dfc86d2265b956"><div class="sl-block" data-block-type="text" data-name="text-edae7d" data-block-id="ce6ed1715dcaee433b4b5b207520c29e" style="height: auto; width: 600px; left: 212px; top: 13px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>vs std::map</p></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-792465" data-block-id="69dbccf0185b2a06fcc9d363f5538f7b" style="min-width: 30px; min-height: 30px; width: 769.777778px; height: 433px; left: 127.111111px; top: 71.5px;"><div class="sl-block-content" data-media-id="11591570" data-video-thumb="aaa/1667545fe1ce90e48df4157c42889df6.jpg" style="z-index: 11;"><video playsinline="" controls="controls" poster="aaa/1667545fe1ce90e48df4157c42889df6.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-src="aaa/b6c5d5f76a36c35e1c6a96a02212a889.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 488px; left: 268px; top: 524.5px;" data-block-id="842bdc8e31fef2316959a2cb04dae754" data-name="text-a520f3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>apples and oranges...</p></div></div></section><section data-id="47ffaf33fa4bb7ee286f8922fd26715b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 202.5px; height: auto;" data-block-id="33df9eff77a8a85975aa4918b32eeabe"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Why we</h1></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 109px; top: 299.5px; height: auto;" data-block-id="b9d7a4d26398ecc72b19378b0f5c0c6e"><div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;" data-fragment-index="0"><h2>Almost Always Vector</h2></div></div></section><section data-id="a7c1ab01213010e94bfc406299ea6796"><div class="sl-block" data-block-type="text" data-name="text-4ca696" data-block-id="553de3e421916e1c0ca23c776edc8272" style="height: auto; width: 600px; left: 212px; top: 18.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>Efficiency</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-5ccb3b" data-block-id="fba55c723d08e2d95174de7c861cee50" style="height: auto; width: 421px; left: 29px; top: 65.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p style="color:rgb(14, 14, 14); text-align:left"><strong>Cache-Friendly, Fast Access</strong>: <span>std::vector</span> stores elements in <strong>contiguous memory</strong>, which is highly efficient because modern CPUs are optimized for sequential data access. Improving <strong>cache locality</strong>, meaning accessing elements in sequence is faster than containers like <span>std::list</span>, which have non-contiguous memory.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-948193" data-block-id="a7c5fc5b1b9e7f949d8fd4f7940cc5ae" style="height: auto; width: 409px; left: 564px; top: 65.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="color:rgb(14, 14, 14); text-align:left"><strong>Amortized Constant-Time Growth</strong>: When adding elements, <span>std::vector</span> resizes by allocating more memory in chunks (usually doubling its capacity). Though resizing has a cost, this occurs infrequently, making most insertions run in <strong>amortized constant time</strong>. Ensuring adding elements is generally efficient.</p></div></div></section><section data-id="bf650e2e8377bb5498a3725901463dd8"><div class="sl-block" data-block-type="text" data-name="text-4ca696" style="height: auto; width: 600px; left: 212px; top: 18.5px;" data-block-id="421375f7b52ebb7fb2a775f55487e60b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>Practicality</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-5ccb3b" style="height: auto; width: 421px; left: 29px; top: 65.5px;" data-block-id="beb121f19bcc92a7705674571a559429"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p style="color: rgb(14, 14, 14); text-align: left;"><strong>Automatic Memory Management</strong>: One of the biggest practical benefits of <span>std::vector</span> is that it handles memory allocation and deallocation automatically. You don’t need to worry about tracking memory manually or knowing the collection size in advance. It grows as you need it.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-948193" style="height: auto; width: 409px; left: 564px; top: 65.5px;" data-block-id="11e52c2a31772e627d39aa83dd7de0b1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="color:rgb(14, 14, 14); text-align:left"><strong>Random Access</strong>: You can access elements in constant time via indexing (i.e., vec[i]). This practicality is a big advantage compared to containers like std::list, where you’d need linear time to access an element at a specific position.</p></div></div></section><section data-id="8ffed568c696e3b0d3425f5290c6841e"><div class="sl-block" data-block-type="text" data-name="text-4ca696" style="height: auto; width: 600px; left: 212px; top: 18.5px;" data-block-id="02db694632a5cc8d004cff855a75ddda"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p>Versatility</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-5ccb3b" style="height: auto; width: 421px; left: 29px; top: 65.5px;" data-block-id="e3924652b45d309af59c6e5e6ee61767"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p style="color: rgb(14, 14, 14); text-align: left;"><strong>Wide Standard Library Support</strong>: <span>std::vector</span> is fully integrated with the C++ Standard Library, meaning it works seamlessly with algorithms like <span>std::sort</span>, <span>std::find</span>, and other utilities. You can pass <span>std::vector</span> directly to algorithms, apply transformations, and leverage the iterator interface.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-948193" style="height: auto; width: 409px; left: 564px; top: 65.5px;" data-block-id="286c392120fd8f28e9d9d468675641c5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p style="color:rgb(14, 14, 14); text-align:left"><strong>Dynamic Sizing and Flexible Insertion</strong><span style="color:rgb(14, 14, 14)">: While arrays (</span><span style="color:rgb(14, 14, 14)">std::array</span><span style="color:rgb(14, 14, 14)">) require you to know the size at compile time, </span><span style="color:rgb(14, 14, 14)">std::vector</span><span style="color:rgb(14, 14, 14)"> can dynamically grow or shrink, making it much more versatile. It supports useful operations like </span><span style="color:rgb(14, 14, 14)">push_back()</span><span style="color:rgb(14, 14, 14)">, </span><span style="color:rgb(14, 14, 14)">emplace_back()</span><span style="color:rgb(14, 14, 14)">, and </span><span style="color:rgb(14, 14, 14)">insert()</span><span style="color:rgb(14, 14, 14)"> for flexible management of elements.</span></p></div></div></section><section data-id="4d01d12627c9a9eae4b4848d5096f07c"><div class="sl-block" data-block-type="text" style="width: 860px; left: 82px; top: 32px; height: auto;" data-block-id="1132b36aba0846e5d451e816ec12d90a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;"><h2>Thanks</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 860px; left: 82px; top: 208.5px; height: auto;" data-block-id="2a4d1e899f582e01c2fb786527044e2c" data-name="text-8032fb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>AAV</h2>
+
+<h2>FTW</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-67af95" data-block-id="b3ee97009b7481d42f89f70db75fd2c6" style="height: auto; width: 968px; left: 28px; top: 518.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><a href="https://github.com/kevinbcarpenter/almost-always-vector" target="_blank">https://github.com/kevinbcarpenter/almost-always-vector</a></p></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3239501,"slug":"aaa","title":"{AAA}","description":"","width":1024,"height":576,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cb8c5420bf55e2633a127a1c7aafc025/thumb.jpg?1725362447","view_count":0,"user":{"id":2774463,"username":"cppevents","name":"Kevin Carpenter","description":"","thumbnail_url":"https://www.gravatar.com/avatar/4adb4cdd551eece9d4e3e7ff3e4987e9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":57387542,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"default","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":62,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1726515864197,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{"76be4980132242244b1950e8debdfe11":"Explain about where we started and where we are going and why...\n\nwe almost always vector"}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1024,
+				height: 576,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "default",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
